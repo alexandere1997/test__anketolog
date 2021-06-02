@@ -1,2 +1,3 @@
-# test__anketolog
-test__anketolog
+npm install
+gulp
+

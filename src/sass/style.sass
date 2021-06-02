@@ -1,0 +1,162 @@
+@import "fonts"
+.header
+    background: url("img/Rectangle.jpg") no-repeat 0% 0%
+    background-size: cover
+    height: 567px
+    margin-top: -20px
+    display: flex
+    justify-content: center
+    align-items: center
+    &__container
+        width: 90%
+    &__bottom
+        display: flex
+        justify-content: space-around
+        align-items: center
+        background-color: #fff
+        border-top-left-radius: 10px
+        border-top-right-radius: 10px
+        margin-top: 120px
+    &__title
+        font-family: sans-serif
+        font-size: 42px
+        margin: 0
+        color: #fff
+        font-weight: 100
+    &__subtitle
+        color: #fff
+        font-family: sans-serif
+        font-size: 20px
+    &__btn
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #fff
+        width: 150px
+        height: 40px
+        background-color: #78C1F9
+        font-family: sans-serif
+        font-size: 13px
+        text-decoration: none
+        border-radius: 4px
+        text-transform: uppercase
+        margin-top: 40px
+    &__top
+        margin-top: 128px
+        margin-left: 100px
+    &__arrow
+        font-size: 24px
+        color:#D5D5D5
+        transition: 0.4s
+        width: 30px
+        height: 30px
+        border-radius: 120px
+        margin-top: -12px
+        &:hover
+            background-color: red
+            
+    &__left
+        margin-left: 35px
+        cursor: pointer
+    &__rigth
+        margin-right: 35px
+.active
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 15px
+    height: 15px
+    border-radius: 120px
+    background-color: #F35959
+.acive__arrow
+    color: #fff
+.interview
+    background-color: #F3F3F3
+    display: flex
+    justify-content: center
+    align-items: center
+    &__container
+        width: 90%
+    &__item
+        width: 260px
+        height: 160px
+        background-color: #fff
+        border-radius: 8px
+        padding: 20px
+        &:nth-child(1)
+            background-image: url("img/Frame 14.png")
+            background-repeat: no-repeat
+            background-position: 100% 100%
+        &:nth-child(2)
+            background-image: url("img/Frame 15.png")
+            background-repeat: no-repeat
+            background-position: 100% 100%
+        &:nth-child(3)
+            background-image: url("img/Frame 15-1.png")
+            background-repeat: no-repeat
+            background-position: 100% 100%
+    &__items
+        display: flex
+        justify-content: space-around
+        width: 80%
+        margin-bottom: 60px
+    &__box
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &__head
+        font-family: sans-serif
+        font-size: 30px
+        font-weight: 100
+        margin-top: 70px
+        color: #757575
+    &__title
+        margin: 0
+        font-family: sans-serif
+        font-weight: bold
+        font-size: 18px
+        margin-top: 10px
+    &__subtitle
+        margin: 0
+        font-family: sans-serif
+        font-size: 12px
+        margin-top: 10px
+        line-height: 19px
+        color: #757575
+        b
+            color: #000
+    &__bold
+        display: flex
+.swiper-slide
+    display: flex
+    justify-content: center
+.swiper-button-prev:after
+    content: none
+.swiper-button-next:after
+    content: none
+@media ( max-width: 1199px )
+    .header
+        &__top
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            text-align: center
+            margin-left: 0
+    .interview
+        &__items
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &__item
+            margin-bottom: 20px
+@media ( max-width: 575px )
+    .header
+        &__title
+            font-size: 34px
+    .interview
+        &__head
+            font-size: 21px
+    
+    
